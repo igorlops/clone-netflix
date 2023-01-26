@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,103 +9,146 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Projeto Netflix</title>
 </head>
+
 <body>
 	<header>
-		<div class="center">
-			<div class="header-left">
-				<a href=""><img src="images/logo_netflix.png"></a>
-			
-
-				<div class="menu-header">
-					<ul>
-						<li><a href="">Ínicio</a></li>
-						<li><a href="">Séries</a></li>
-						<li><a href="">Filmes</a></li>
-						<li><a href="">Adicionados recentemente</a></li>
-						<li><a href="">Minha lista</a></li>
-					</ul>
-				</div><!--menu-header-->
-			</div><!--header-left-->
-
-
-			<div class="header-right">
-				<div class="search">
-					<i class="fa fa-search" style="color: white;"></i>
-				</div><!--search-->
-					<a href="">INFANTIL</a>
+		<nav>
+		
+			<div class="center">
+				<div class="header-left">
+					<a href=""><img src="images/logo_netflix.png"></a>
+		
+		
+					<div class="menu-header">
+						<ul>
+							<li><a href=""><span style="font-weight: bold;">Início</span></a></li>
+							<li><a href="">Séries</a></li>
+							<li><a href="">Filmes</a></li>
+							<li><a href="">Adicionados recentemente</a></li>
+							<li><a href="">Minha lista</a></li>
+						</ul>
+					</div><!--menu-header-->
+				</div><!--header-left-->
+		
+		
+				<div class="header-right">
+					<div class="search">
+						<i class="fa fa-search" style="color: white;"></i>
+					</div><!--search-->
+					<a href="">Infantil</a>
 					<i class="fa fa-gift"></i>
-				<div class="notifications">
-					<div class="circle-notifications">
-						<span>10</span>
+					<div class="notifications">
+						<div class="circle-notifications">
+							<span>10</span>
+						</div>
+						<i class="fa fa-bell"></i>
 					</div>
-					<i class="fa fa-bell"></i>
-				</div>
-			</div><!--header-right-->
-			<div class="clear"></div>
-		</div><!--center-->
+				</div><!--header-right-->
+				<div class="clear"></div>
+			</div><!--center-->
+		</nav>
 
-	</header>
+		<section class="destaque">
 
-	<section class="destaque">
-
-		<video autoplay muted loop id="video-destaque">
-			<source src="images/arrow.mp4" type="video/mp4">
-		</video>
+			<video autoplay muted loop id="video-destaque">
+				<source src="images/arrow.mp4" type="video/mp4">
+			</video>
 			<div class="overlay"></div>
 			<div class="texto-destaque">
 				<h2>Lorem ipsum</h2>
 				<h3>Assista a 9° temporada agora!</h3>
 				<p>Aqui vai a descrição completa da minha série ou filme</p>
 				<br>
-				
-				<a href=""><i class="glyphicon glyphicon-play"></i>Assistir</a>
-				<a href=""><i class="glyphicon glyphicon-plus-sign"></i>Minha lista</a>
-				<a href=""><i class="glyphicon glyphicon-info-sign"></i>Mais informações</a>
+
+				<a class="play" href=""><i class="glyphicon glyphicon-play"></i>Assistir</a>
+				<a class="playlist" href=""><i class="glyphicon glyphicon-plus-sign"></i>Minha lista</a>
+				<a class="more-information" href=""><i class="glyphicon glyphicon-info-sign"></i>Mais informações</a>
 			</div><!--texto-destaque-->
-				
-	</section> <!--destaque-->
 
+		</section> <!--destaque-->
 
-	<section class="vitrine">
-		<div class="vitrine-flex">
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
+	</header>
+
+	<div class="videos">
+	
+		<section class="vitrine">
+			<div class="titulo">Continuar assistindo como Lorem Ipsum<span class="ver-tudo">Ver tudo ></span> </div>
+			
+			<div class="vitrine-flex">
 				<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
-						<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
-			</div>
-			<div class="vitrine-single-banner">
-				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
-			</div>
-	</div>	<!--vitrine-flex-->
-		
-	</section><!--vitrine-->
-
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXbn7cQjnOuaeYcot80IDoU3h-thwHpftHR-wTF5NHtS7uL0e5wU5uSDUJijjF9SOP0Uy3hqgD7TYfABA5RsJ1t1gOh_dZVDVDZhZBawElpAGRsEG-DCPZzrbcHtwqL5e9uL.jpg?r=095');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYDiOSvWCvZ2yMQlWlw9wkQsTz4yLThIuiJZLUMSQXG_LerBtgEWrGX3CYV1_xfoTvDC-GlnUxKVZOb44pof6mMq-ngqLUht05M.webp?r=e42');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcjScCXa3vLlQolqkEEfvMgLhkBcYDdCNOrbRarrShkvhuRMV6MqV0i6qVqcT5l4l0zODY-TujcKRpaezfSKlh3OHs8mVpjYk00.webp?r=bb1');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfFjP457-vwpAkNERoCM9NEu1rggz0SNkk7Hi6sg3sCh9_J39taZBHJPBOUowArADQ10zQLEZd2_Wm3xonNE3jVhtIRBzi27xUk.webp?r=8fa');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZA-Jv2tRMmTfL8TOeWWP362v2mJqpBf5Ld0sZ_FRMZuOkU9J3umHTAOzTtH5d4ibj1qxvS2V3h7UAX-38qQyxqlylZnr0hkXz4.webp?r=d88');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaS0YAmivJZG0JitQyCJAKhooYDZ-b3aBfk1gMAoNwJWsAj0UfnRHaKq3-4J_zTxpWnGRxddDJAe_yyxexK94Sp9TOnzXOz8A6I.webp?r=295');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV001g1xarsnczulP4QgAwna_3mLxLVIFBOBVXAUGh_SlrWFx9mtyypE9jtTSNsblhsqR9gHxKWY8Worm8Y9fsx635513AVXu9Q.webp?r=bc9');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaJ5wPPc84tXfMBcKLS-4rL1AOuk-EXFjrXbSYze2E8GXuuU6jGSis2a3GxEiT41ZfTFIkyh3yR0Tb6MsmG2RAP6H2Lxt9sw0qE.webp?r=e9c');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXSZsQJhEiBBvgPBtsvuW5KJYmQFWfW2LmY8XBXrD5mhrFA6hIqUQDTuCLNmBFtkIwQG1Pz0byyhlN3RzdKbF8nNg6aC7-qsryQ.webp?r=d21');"></div>
+				</div>
+			</div> <!--vitrine-flex-->
+	
+		</section><!--vitrine-->
+	
+		<section class="vitrine">
+			<div class="titulo-emAlta">Em alta <span class="ver-tudo-emAlta">Ver tudo ></span></div>
+			
+			<div class="vitrine-flex">
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa8hXQ5QbzpMiBTV4zL0iIw39XZVNaZebNTYyYA0cnFeIZH9fzTwfOb1wvS8F1_Yszz0NHEJl0T7AIv9uxolPTRn6HJCvPDHSo-0JVRIoVCIGSNsLPDGBq_C9bT3_iyCFVcD60p4I9pXwszGuzgh93MH9wDFnN9rLTuA7EFZb8tSXXqaimVdRWrTK0b6duLy-D2K765N2L1lSQgJrXOOCwXaRZkB3XJbc1NYeHBvFgwPYAKS10SlCA7-_hTXVyZXZEOc7WopSs1QsrsJGtWJTybK05QEnCyh0p6hIBXbkMOT5HW1wqzOewLqgq_PVDUaqT45cLCgcOBoQ_4Ai3mR_qo.webp?r=615');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZi_RqpT84KU9PuLqluo8QNslnXT8Hu2_bME3ez2GFxUqc-CdICtULofUMFIpTV_EO1tghUWNSLzXeqhWzYDdSL2ifiUB0eKrn8.webp?r=01d');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU7UuJkcRrI-_nAPR2NjuSmm2VAS_mR7Q4KXzwyLv9uCpPUN6yme6YqoGoOi6GPVhfYDLNO2kpwXMSJGH6FcyRjBHrlBR6mNgWhQgXZ2qJER98aCeGueUmq4Dt20uKFgcumr.jpg?r=a92');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWWkUxtcJVK58SAnG-FMLo4iX-hjD1ZcT1MPd9Dk3ZTIFmz-Xt4QenjV5vEu80a-BXmRLEZCJa3XhSXDaEU633C5F_nmRIC8ZoeclQQAvW4SbBIYaRD3FdclHTVt90oDyLQs.jpg?r=9a9');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbYXXcJ8AkRX9stoX8kHzuNt7HlwKE374Ub30NobnHSwu0Z_FTMU0u1-siuSQbsGXpkVfZti95YM2Bt5A-mZYawN-Ps6O_OhP6FWKWQzwZVGrr5gvyStaf2-I0Vh2h12Ql8Z.jpg?r=b8c');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfX-CJTX6l5tZelIKayDyM_5-eL0_Mgtp6aKnxhiLP9I5gNKGtXd4Ax7J36O-9xZsVr1hv2nSVVQBUG_rDbGQ60ncLtCrNB3tsdEwqPeeKfxQDmMiP5XJASyStJVcipZy4mU.jpg?r=639');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('http://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQe-Tryli27miWowfG3GeVEPTEKVi_hZD-XOybB59cizPmwYZbC0YtQaehZXGIKYGiZQEBguOBR1zLB9wxKetymFOyPfd1A-8P2plkCYuHukwlhneX4tiABduoK7CfkKby2U.jpg?r=587');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUvt2SYNup-jIxTP4ONNoi3Omy4oe4gwpFgXQIYNf5RyIi1mUfn58EikBXqjGPRSCrZIfdq7WgbbmCdbUUoHkpkyo21ozzy8FxzggpMi4ORhCdsLBcWzbf_ILaNGZl0BUgY7.jpg?r=dee');"></div>
+				</div>
+				<div class="vitrine-single-banner">
+					<div class="vitrine-wraper" style="background-image: url('https://occ-0-1768-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ8Jq16ACz76o0StBZivDNzHlsuXlGL7xL-aEUhxy9OOX2cwpMrNAiX4TcUTebMxS56hFjEtAjsmL4gxKJ2vXsbvbyskkoiesVg.webp?r=005');"></div>
+				</div>
+			</div> <!--vitrine-flex-->
+	
+		</section><!--vitrine-->
+	</div><!--videos-->
 
 
 	<script src="jquery.js"></script>
 	<script src="slick.min.js"></script>
 	<script src="js/functions.js"></script>
 	<script>
-	
+
 	</script>
 </body>
+
 </html>
